@@ -20,6 +20,10 @@ class EmotionTable extends React.Component {
                     </tr>
                 )
                 })
+<<<<<<< HEAD
+=======
+            
+>>>>>>> adb9c51c1e2d53c9b8ee59f8f20491d6e55b98a3
             }
             </tbody>
           </table>

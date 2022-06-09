@@ -12,11 +12,11 @@ app.use(cors_app());
 /*Uncomment the following lines to loan the environment 
 variables that you set up in the .env file*/
 
-// const dotenv = require('dotenv');
-// dotenv.config();
+const dotenv = require('dotenv');
+dotenv.config();
 
-// const api_key = process.env.API_KEY;
-// const api_url = process.env.API_URL;
+const api_key = process.env.API_KEY;
+const api_url = process.env.API_URL;
 
 function getNLUInstance() {
     /*Type the code to create the NLU instance and return it.
@@ -54,9 +54,15 @@ app.get("/url/emotion", (req,res) => {
             }
         }
     }
+<<<<<<< HEAD
 
     const naturalLanguageUnderstanding = getNLUInstance();
 
+=======
+    
+    const naturalLanguageUnderstanding = getNLUInstance();
+    
+>>>>>>> adb9c51c1e2d53c9b8ee59f8f20491d6e55b98a3
     naturalLanguageUnderstanding.analyze(analyzeParams)
     .then(analysisResults => {
         //Retrieve the emotion and return it as a formatted string
@@ -80,9 +86,15 @@ app.get("/url/sentiment", (req,res) => {
             }
         }
     }
+<<<<<<< HEAD
 
     const naturalLanguageUnderstanding = getNLUInstance();
 
+=======
+    
+    const naturalLanguageUnderstanding = getNLUInstance();
+    
+>>>>>>> adb9c51c1e2d53c9b8ee59f8f20491d6e55b98a3
     naturalLanguageUnderstanding.analyze(analyzeParams)
     .then(analysisResults => {
         //Retrieve the sentiment and return it as a formatted string
@@ -107,9 +119,15 @@ app.get("/text/emotion", (req,res) => {
             }
         }
     }
+<<<<<<< HEAD
 
     const naturalLanguageUnderstanding = getNLUInstance();
 
+=======
+    
+    const naturalLanguageUnderstanding = getNLUInstance();
+    
+>>>>>>> adb9c51c1e2d53c9b8ee59f8f20491d6e55b98a3
     naturalLanguageUnderstanding.analyze(analyzeParams)
     .then(analysisResults => {
         //Retrieve the emotion and return it as a formatted string
@@ -133,9 +151,15 @@ app.get("/text/sentiment", (req,res) => {
             }
         }
     }
+<<<<<<< HEAD
 
     const naturalLanguageUnderstanding = getNLUInstance();
 
+=======
+    
+    const naturalLanguageUnderstanding = getNLUInstance();
+    
+>>>>>>> adb9c51c1e2d53c9b8ee59f8f20491d6e55b98a3
     naturalLanguageUnderstanding.analyze(analyzeParams)
     .then(analysisResults => {
         //Retrieve the sentiment and return it as a formatted string
